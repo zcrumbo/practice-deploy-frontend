@@ -26,7 +26,7 @@ describe('Gallery Service', function() {
         Authorization: 'Bearer testtoken'
       };
 
-      this.$httpBackend.expectPOST('http://localhost:8000/api/gallery', galleryData, headers)
+      this.$httpBackend.expectPOST(`${__API_URL__}/api/gallery`, galleryData, headers)
       .respond(200, {
         _id: '1234',
         username: 'testuser',

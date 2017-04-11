@@ -29,7 +29,7 @@ describe('edit gallery component', function () {
 
   describe('editGallryCtrl.updateGallery', () => {
     it('should make a valid put request', () => {
-      let url = 'http://localhost:8000/api/gallery/12345';
+      let url = `${__API_URL__}/api/gallery/12345`;
       let headers = {
         Accept: 'application/json',
         'Content-Type': 'applIcation/json',

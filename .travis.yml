@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - 'stable'
-dist: 'trusty'
+dist: trusty
 sudo: required
 addons:
   # From some tests it seems you can only have one firefox addon.

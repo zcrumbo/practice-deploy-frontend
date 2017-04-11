@@ -32,7 +32,7 @@ describe('edit gallery component', function () {
       let url = 'http://localhost:8000/api/gallery/12345';
       let headers = {
         Accept: 'application/json',
-        'Content-Type': 'application/json',
+        'Content-Type': 'applIcation/json',
         Authorization: 'Bearer testtoken'
       };
 

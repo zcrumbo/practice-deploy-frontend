@@ -3,7 +3,7 @@
 describe('Gallery Item Component', function () {
 
   beforeEach(() => {
-    angular.mock.module('cfgarm');
+    angular.mock.module('cfgram');
     angular.mock.inject(($rootScope, $componentController, $httpBackend, authService) => {
       this.$rootScope = $rootScope;
       this.$componentController = $componentController;

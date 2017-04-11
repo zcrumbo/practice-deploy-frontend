@@ -4,10 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p --progress",
     "watch": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot",
     "build": "./node_modules/webpack/bin/webpack.js",
     "test-watch": "./node_modules/karma/bin/karma start",
-    "test": "./node_modules/karma/bin/karma start --single-run"
+    "test": "./node_modules/karma/bin/karma start --single-run",
+
   },
   "keywords": [],
   "author": "",
@@ -15,6 +18,7 @@
   "dependencies": {
     "angular": "^1.6.3",
     "angular-animate": "^1.6.3",
+    "angular-mocks": "^1.6.4",
     "angular-route": "^1.6.3",
     "angular-touch": "^1.6.3",
     "angular-ui-bootstrap": "^2.5.0",
@@ -48,7 +52,6 @@
     "webpack": "^2.3.2"
   },
   "devDependencies": {
-    "angular-mocks": "^1.6.4",
     "webpack-dev-server": "^2.4.2"
   }
 }
